@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: userService
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        cluster-name: HZ #集群名称
+        namespace: dev
+      config:
+        file-extension: yaml
+        namespace: dev
+  profiles:
+    active: dev
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:10086/eureka
